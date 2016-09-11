@@ -1,1 +1,0 @@
-# Moto-E-Surnia-Nethunter-Kernel
