@@ -3375,6 +3375,10 @@ functions_store(struct device *pdev, struct device_attribute *attr,
 			if (err)
 				pr_err("android_usb: Cannot enable '%s' (%d)",
 							name, err);
+                        
+                        err = android_enable_function(dev, conf, "hid");
+                        if (err)
+                                pr_err("android_usb: Cannot enable hid (%d)";
 		}
 	}
 
