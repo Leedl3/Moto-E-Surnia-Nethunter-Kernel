@@ -1,0 +1,10 @@
+--- drivers/usb/gadget/android.c
++++ drivers/usb/gadget/android.c
+@@ -2720,7 +2682,6 @@ static struct android_usb_function *supported_functions[] = {
+ #ifdef CONFIG_SND_PCM
+ 	&audio_source_function,
+ #endif
+-       &hid_function,
+ 	&uasp_function,
+ 	&usbnet_function,
+ 	NULL
